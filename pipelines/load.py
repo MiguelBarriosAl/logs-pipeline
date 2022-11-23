@@ -1,6 +1,6 @@
 import csv
 
-chunk_size = 3
+chunk_size = 3  # In a production environment it can be set at a higher number
 chunk_list = list()
 
 
@@ -15,17 +15,5 @@ def sink_file(path: str) -> list:
         next(reader_csv)
         chunked_list = list(reader_csv)
         for i in range(0, len(chunked_list), chunk_size):
-            chunk_list.append(chunked_list[i:i+chunk_size])
+            chunk_list.append(chunked_list[i:i + chunk_size])
         return chunk_list
-
-
-
-
-
-
-
-
-
-
-
-
