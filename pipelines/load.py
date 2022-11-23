@@ -7,8 +7,8 @@ chunk_list = list()
 def sink_file(path: str) -> list:
     """
     Reading of Csv files stored in chunks according to the variable "chunk size".
-    :param path:
-    :return:
+    :param path: Path to csv file
+    :return: Separation of stored chunk data in a list
     """
     with open(path, "r") as file:
         reader_csv = csv.reader(file, delimiter=";")

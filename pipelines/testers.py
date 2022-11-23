@@ -2,7 +2,7 @@ import csv
 LIMIT_TIME = 5*60
 BANNED_TIME = 60*60
 UPLOAD_FOLDER = 'data/'
-ALLOWED_EXTENSIONS = set(['csv'])
+ALLOWED_EXTENSIONS = {'csv'}
 
 
 def test_allowed_file(filename: str):

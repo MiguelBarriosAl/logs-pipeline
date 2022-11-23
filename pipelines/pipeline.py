@@ -16,7 +16,6 @@ for file in files:
         print(process_log.campaign())
         print(process_log.source())
         print(process_log.medium())
-
     else:
         print('The file is not in .csv format')
 
