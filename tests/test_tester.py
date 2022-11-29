@@ -4,7 +4,6 @@ from pipelines.testers import test_user_visits, test_allowed_file
 
 
 class TestUserVisits(unittest.TestCase):
-
     def test_test_user_visits(self):
         path = '\\test_data\\test_log.csv'
         BASE_DIR = Path(__file__).resolve(strict=True).parent
@@ -19,7 +18,6 @@ class TestUserVisits(unittest.TestCase):
 
 
 class TestFile(unittest.TestCase):
-
     def test_allowed_file(self):
         file = 'test-file.csv'
         test_allowed_file(file)

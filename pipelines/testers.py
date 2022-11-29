@@ -1,6 +1,7 @@
 import csv
-LIMIT_TIME = 5*60
-BANNED_TIME = 60*60
+
+LIMIT_TIME = 5 * 60
+BANNED_TIME = 60 * 60
 UPLOAD_FOLDER = 'data/'
 ALLOWED_EXTENSIONS = {'csv'}
 
@@ -31,18 +32,4 @@ def test_user_visits(path: str):
                 return {
                     "timestamp": timestamp,
                     "anonymous_id": user,
-                    "banned_user_time": banned
-                }
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    "banned_user_time": banned}

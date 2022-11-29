@@ -1,11 +1,9 @@
 from testers import test_out_of_order
 
-
-TIME_UNIT = 60*60
+TIME_UNIT = 60 * 60
 
 
 class Process_Log:
-
     def __init__(self, chunk_list: list):
         self.chunks = chunk_list
         self.chunks_range = load_per_range(self.chunks)

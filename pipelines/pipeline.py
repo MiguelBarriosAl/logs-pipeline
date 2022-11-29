@@ -8,6 +8,7 @@ UPLOAD_FOLDER = '\\data\\'
 BASE_DIR = Path(__file__).resolve(strict=True).parent
 PATH_DIR = (str(BASE_DIR) + UPLOAD_FOLDER)
 files = os.listdir(PATH_DIR)
+
 for file in files:
     if test_allowed_file(file):
         test_user_visits(PATH_DIR + file)
@@ -18,4 +19,3 @@ for file in files:
         print(process_log.medium())
     else:
         print('The file is not in .csv format')
-
